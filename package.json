@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "live": "npm run build && git add dist && git commit -m '' && npm run push",
+    "push": "git subtree push --prefix dist origin Live"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
