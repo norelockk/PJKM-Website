@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 
+onMounted(() => {
+	document.title = "Projekt: Community"
+})
 function PlayVideo() {
 	var videoPlayer = document.getElementById('VideoPlayer')
 	videoPlayer?.classList.add("show")
@@ -20,10 +23,10 @@ function PlayVideo() {
 						</v-row>
 						<v-row class="my-0">
 							<v-col align-self="start">
-								<a href="https://youtube.com" target="_blank"><v-btn>
+								<!-- <a href="https://youtube.com" target="_blank"><v-btn>
 										Watch our announcement video
 									</v-btn>
-								</a>
+								</a> -->
 							</v-col>
 						</v-row>
 					</div>
@@ -35,18 +38,7 @@ function PlayVideo() {
 </template>
 
 <style>
-@font-face {
-	font-family: 'Share Tech Mono';
-	font-weight: 400;
-	font-style: normal;
-	font-display: auto;
-	unicode-range: U+000-5FF;
-	src: url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-}
 
-.mono {
-	font-family: 'Share Tech Mono', monospace !important;
-}
 
 .hide {
 	display: none;
