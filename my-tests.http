@@ -1,0 +1,9 @@
+get http://158.69.25.178:11498/?teamup
+Content-Type: text/json
+
+{
+	"dates" : {
+		"start": null,
+		"end" : null
+	}
+}
