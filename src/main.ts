@@ -13,12 +13,31 @@ import { aliases, mdi } from 'vuetify/iconsets/mdi'
 import { fa } from 'vuetify/iconsets/fa'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
+import '@mdi/font/css/materialdesignicons.css'
 
 const vuetify = createVuetify({
 	components,
 	directives,
+	theme: {
+		themes: {
+			light: {
+				dark: false,
+				colors: {
+					primary: "#0272b3",
+					background: '#1a1b1c'
+				}
+			},
+			dark: {
+				dark: true,
+				colors: {
+					primary: "#0272b3",
+					background: '#1a1b1c'
+				}
+			}
+		}
+	},
 	icons: {
-		defaultSet: 'fa',
+		defaultSet: 'mdi',
 		aliases,
 		sets: {
 			fa,
